@@ -8,6 +8,12 @@ var getLoginDetails = function (req, res) {
 exports.getLoginDetails = getLoginDetails;
 var loginHandler = function (req, res) {
     var _a = req.body, email = _a.email, password = _a.password;
-    res.send("Form Submitted Successfully email+pass=".concat(email + password));
+    if (email && password) {
+        res.send("Form Submitted Successfully email+pass=".concat(email + password));
+    }
+    else {
+        res.send("Please Provide Both email and Password");
+    }
 };
 exports.loginHandler = loginHandler;
+// By creating interface we can deal with this poor type defs but this is not a good way to deal with this type issue as every time wa have to remember this RequestWithBody interface.
