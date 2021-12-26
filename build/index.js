@@ -8,6 +8,7 @@ var index_1 = require("./routes/index");
 var PORT = 3000;
 var app = (0, express_1.default)();
 app.use(express_1.default.json());
+app.use(express_1.default.urlencoded());
 app.use('/login', index_1.loginRouter);
 app.listen(PORT, function () {
     console.log('Listening on Port ', PORT);
