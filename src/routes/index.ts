@@ -1,3 +1,4 @@
-import loginRouter from './loginRouter/loginRoutes';
+import loginRouter from './loginRouter/loginRoute';
+import homeRouter from './homeRouter/homeRoute';
 
-export { loginRouter };
+export { loginRouter, homeRouter };
