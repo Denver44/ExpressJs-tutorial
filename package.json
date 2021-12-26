@@ -11,6 +11,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^6.2.1"
+    "@types/cookie-session": "^2.0.44",
+    "@types/express": "^4.17.13",
+    "concurrently": "^6.2.1",
+    "cookie-session": "^2.0.0",
+    "express": "^4.17.2"
   }
 }
