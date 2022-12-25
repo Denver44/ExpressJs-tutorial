@@ -1,0 +1,17 @@
+{
+  "name": "express101",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressServer.js",
+  "type": "module",
+  "scripts": {
+    "start-express-server": "nodemon express-server.js",
+    "start-express-routing": "nodemon express-routing.js",
+    "start-express-staticFiles": "nodemon express-staticFiles.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
